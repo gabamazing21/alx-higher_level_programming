@@ -7,7 +7,7 @@ if (__name__ == '__main__'):
     elif (arg_num == 1):
         print(f"{arg_num} argument:")
         print(f"{arg_num}: {argv[arg_num]}")
-    elif (arg_num > 1):
+    else:
+        print(f"{arg_num} arguments:")
         for i in range(1, len(argv)):
-            print(f"{arg_num} arguments:")
             print(f"{i}: {argv[i]}")
