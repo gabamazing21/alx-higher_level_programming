@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if matrix is None:
-        print("")
-    for i in matrix:
-        print("\n")
-        for j in i:
-            if (i != -1 and j != -1):
-                print("{:d}".format(j), end=' ')
-            else:
-                print("{:d}".format(j))
-    print("\n")
+    if matrix == [[]]:
+        print()
+    else:
+        for i in matrix:
+            for index, j in enumerate(i):
+                if (index == 2):
+                    print("{:d}".format(j))
+                else:
+                    print("{:d}".format(j), end=" ")
