@@ -16,5 +16,5 @@ def safe_print_list_integers(my_list=[], x=0):
                     inner_count += 1
         print()
         return inner_count
-    except (IndexError):
+    except IndexError:
         print("list index out of range")
