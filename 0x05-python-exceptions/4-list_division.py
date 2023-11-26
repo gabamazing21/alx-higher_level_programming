@@ -15,13 +15,11 @@ def custom_zip_longest(iter1, iter2, fillValue=None):
 
 def list_division(my_list_1, my_list_2, list_length):
     new_list = []
-    div, count = 0, 0
+    div = 0
     wrong_type = False
     try:
         for item1, item2 in (custom_zip_longest
                              (my_list_1, my_list_2, fillValue=0.0)):
-            if (count > list_length):
-                break
             if (type(item1) is not int) or (type(item2) is not int):
                 div = 0
                 wrong_type = True
@@ -33,13 +31,12 @@ def list_division(my_list_1, my_list_2, list_length):
                 print("not divible")
             else:
                 div = item1 / item2
-            count += 1
             new_list.append(div)
         if (len(my_list_1) != len(my_list_2)):
             print("out of range")
         if (wrong_type):
             print("wrong type")
-        return new_list
+        return new_list[:list_length]
     except Exception:
         print("we have an error")
     finally:
