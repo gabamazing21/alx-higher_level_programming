@@ -36,7 +36,8 @@ def list_division(my_list_1, my_list_2, list_length):
             print("out of range")
         if (wrong_type):
             print("wrong type")
-        return new_list[:list_length]
+        new_list = new_list[:list_length - 1]
+        return new_lisl
     except Exception:
         print("we have an error")
     finally:
