@@ -1,6 +1,5 @@
 #!/usr/bin/python3
+""" Retangle class """
 class Rectangle:
-    """
-    empty rectangle class
-    """
+    """ empty rectangle class """
     pass
