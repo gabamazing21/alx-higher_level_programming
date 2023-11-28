@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Rectangle Classess"""
 class Rectangle:
-    """ Rectangle Class """
+    """ Rectangle Class Representation """
     def __init__(self, width=0, height=0):
         """
         Initialize properties of a new
@@ -42,3 +42,20 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+    def area(self):
+        """ get area of the rectangle"""
+        return self.__height * self.__width
+    def perimeter(self):
+        """ get the perimeter of the rectangle """
+        if (self.__height == 0 or self.__width == 0):
+            return 0
+        return (2 * self.__height) + (2 * self.__width)
+    def __str___(self):
+        if (self.__width == 0 or self.__height == 0):
+            return ""
+        return str([''.join(['#' for _ in range(self.__width)]) for _ in range(self.__height)])
+    def __repr__(self):
+        if (self.__width == 0 or self.__height == 0):
+            return ""
+        return repr([''.join(['#' for _ in range(self.__width)]) for _ in range(self.__height)])
+
