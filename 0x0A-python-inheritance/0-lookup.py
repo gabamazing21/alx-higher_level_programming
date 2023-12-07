@@ -1,6 +1,14 @@
 #!/usr/bin/python3
-# List of attributes and method
+"""
+learning class method and attributes
+
+"""
+
+
 def lookup(obj):
-    # the class return obj class attribute
+    """
+    the class return obj class attribute
+
+    """
 
     return dir(obj)
