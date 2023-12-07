@@ -6,17 +6,17 @@ Module to add integer
 
 
 def add_integer(a, b=98):
+    """
+    this function calculation addition of integer or float
+
+    Parameters:
+    a (int or float): first integer
+    b (int or float): second integer
+
+    Returns:
+    int or float: the additon of argument
+    """
     try:
-        """
-        this function calculation addition of integer or float
-
-        Parameters:
-        a (int or float): first integer
-        b (int or float): second integer
-
-        Returns:
-        int or float: the additon of argument
-        """
         if (type(a) is not int and type(a) is not float):
             raise TypeError("a must be an integer")
         elif (type(b) is not int and type(b) is not float):
