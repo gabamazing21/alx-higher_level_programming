@@ -3,5 +3,4 @@
 def lookup(obj):
     # the class return obj class attribute
 
-    attr = dir(obj)
-    return attr
+    return dir(obj)
