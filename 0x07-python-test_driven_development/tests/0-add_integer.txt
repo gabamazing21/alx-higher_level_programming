@@ -1,0 +1,51 @@
+# test_0_add_integer.txt
+==============================
+How to use 0-add_integer.py 
+==============================
+This library it's simple since it has one 
+function
+''add_integer()''.
+Numerbers
+=========
+''add_integer()'' return addition of it's argument
+For number it's equivalent to using "+" operator
+::
+	>>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer(2, 3)
+	5
+
+None Numbers
+============
+''add_integer()'' doesn't working none number
+::
+	>>> add_integer("a", 3)
+	'a must be an integer'
+	>>> add_integer(3, "b")
+	'b must be an integer'
+
+Float
+=====
+''add_integer()'' works well with float by casting them
+::
+	>>> add_integer(3.0, 3)
+	6
+	>>> add_integer(3, 3.0)
+	6
+
+Overflow
+========
+''add_integer()'' doesn't work well for overflow argument
+::
+	>>> add_integer(1e100, 1)
+	'a is too large'
+	>>> add_integer(2, 1e100)
+	'b is too large'
+
+Missing Argument
+=========
+"add_integer()" take to two argument a,b
+::
+	>>> add_integer()
+	Traceback (most recent call last):
+		...
+	TypeError: add_integer() missing 1 required positional argument: 'a'
