@@ -6,7 +6,7 @@ Sorting:
 ''print_sorted()'' returns numbers in the list sorted in ascending order.
 
 ::	
-	>>> from my_list import MyList
+	>>> from 1-my_list import MyList
     >>> list_ob = MyList([1, 8, 10, 7, 6, 2])
     >>> list_ob.print_sorted()
     [1, 2, 6, 7, 8, 10]
