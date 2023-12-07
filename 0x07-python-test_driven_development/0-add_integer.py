@@ -8,7 +8,14 @@ Module to add integer
 def add_integer(a, b=98):
     try:
         """
-        this function return a + b
+        this function calculation addition of integer or float
+
+        Parameters:
+        a (int or float): first integer
+        b (int or float): second integer
+
+        Returns:
+        int or float: the additon of argument
         """
         if (type(a) is not int and type(a) is not float):
             raise TypeError("a must be an integer")
