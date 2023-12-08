@@ -26,5 +26,5 @@ def text_indentation(text):
         if (i == "." or i == "?" or i == ":"):
             print()
             print()
-            if ((text[j + 1] == " ") and text[j + 1] is not None):
+            if ((j < len(text)) and (text[j + 1] == " ")):
                 found_space = True
