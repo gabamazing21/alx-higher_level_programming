@@ -1,0 +1,22 @@
+================================
+How to use 5-text_indentation.py
+================================
+it's a simple module with one function
+''text_indentation''
+it indent text with two new line when text is ',' ':' '?'
+it only take string
+;;
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> text_indentation("""gabriel:""")
+	gabriel:
+	<BLANKLINE>
+	>>> text_indentation(56)
+	Traceback (most recent call last):
+		...
+	TypeError: text must be a string
+	>>> text_indentation()
+	Traceback (most recent call last):
+		...
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+	>>> text_indentation('king')
+	king
