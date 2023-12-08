@@ -11,6 +11,12 @@ def matrix_divided(matrix, div):
     matrix_divided take and
     return dividends
     """
+    if (matrix is None):
+        raise TypeError("missing one argument")
+    if (div is None):
+        raise TypeError("missing one argument")
+    if (div is None and matrix is None):
+        raise TypeError("missiong two arguments")
     if (div == 0):
         raise ZeroDivisionError("division by zero")
     if (type(div) is not int and type(div) is not float):
