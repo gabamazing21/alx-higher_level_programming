@@ -23,6 +23,8 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if (row_size_equal(matrix) is False):
         raise TypeError("Each row of the matrix must have the same size")
+    if (div + 1 == div):
+        raise OverflowError("div is too large")
     matrix_list = []
     for i in matrix:
         matrix_sub_list = []
