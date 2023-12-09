@@ -9,12 +9,12 @@ how to use 7-base_geometry.py
 	>>> bg.integer_validator("josh", 0)
 	Traceback (most recent call last):
 		...
-	ValueError: must be greater than 0
+	ValueError: josh must be greater than 0
 	>>> bg.integer_validator("toba", -4)
 	Traceback (most recent call last):
 		...
-	ValueError: must be greater than 0
+	ValueError: toba must be greater than 0
 	>>> bg.integer_validator("shola", "a")
 	Traceback (most recent call last):
 		...
-	TypeError: must be an integer
+	TypeError: shola must be an integer
