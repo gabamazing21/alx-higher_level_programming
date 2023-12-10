@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+this module works wiht
+Rectangle
+"""
+
+
 class BaseGeometry:
     """
     BaseGeometry
@@ -23,6 +29,9 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
+    """
+    Rectangle inherit from BaseGeometry
+    """
     def __init__(self, width, height):
         self.__width = width
         self.__height = height
