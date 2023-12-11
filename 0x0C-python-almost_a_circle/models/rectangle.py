@@ -19,7 +19,7 @@ class Rectangle(Base):
 
     def getWidth(self):
         """get width"""
-        return seld.__width
+        return self.__width
 
     def setHeight(self, height):
         """set height"""
