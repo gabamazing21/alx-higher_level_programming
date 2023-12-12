@@ -15,7 +15,7 @@ class Base:
             Base.__nb_projects += 1
             self.id = Base.__nb_projects
 
-    def to_json_string(list_dictionaries):
+    def to_json_string(self, list_dictionaries):
         """to_json_string - sterilize data"""
         if list_dictionaries is not None:
             return json.dumps(list_dictionaries)
