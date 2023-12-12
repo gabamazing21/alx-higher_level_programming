@@ -92,6 +92,10 @@ class Rectangle(Base):
 
     def display(self):
         """dsiplay rectangle standard output with #"""
+        for _ in range(self.__y):
+            for _ in range(self.__x):
+                print(end=" ")
+            print()
         for _ in range(self.__height):
             for _ in range(self.__width):
                 print("#", end='')
@@ -101,3 +105,18 @@ class Rectangle(Base):
         """str give string representation of the class """
         return (f"[Rectangle] ({self.id})"
                 f" {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+
+    def update(self, *args):
+        for i, arg in enumerate(args):
+            if i == 0:
+                self.id == arg
+            elif i == 1:
+                self.__width = arg
+            elif i == 2:
+                self.__height = arg
+            elif i == 3:
+                self.__x = arg
+            elif i == 4:
+                self.__y = arg
+            else:
+                break
