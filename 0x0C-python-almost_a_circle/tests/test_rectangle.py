@@ -28,3 +28,12 @@ class TestRectangle(unittest.TestCase):
     def test_set_y(self):
         self.rectangle.y = 7
         self.assertEqual(self.rectangle.y, 7)
+
+    def test_non_integer_input(self):
+        with self.assertRaises(TypeError):
+            rect = Rectangle('a', 2, 'b', 5, 1)
+        with self.assertRaises(ValueError):
+            rect = Rectangle(0, 0, 1, 3, 4)
+        with self.assertRaises(ValueError):
+            rect = Rectangle(1, 2, -4, -7, 1)
+
