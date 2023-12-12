@@ -22,3 +22,19 @@ class Base:
             return json.dumps(list_dictionaries)
         else:
             return "[]"
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """writes the JSON string
+        representation of list_objs
+        to a file:"""
+        file_name = "Rectangle.json"
+        dict_list = []
+        if list_objs is not None:
+            for i in list_objs:
+                shapes = i
+                dictionary = shapes.to_dictionary()
+                json_dictionary = cls.to_json_string(dictionary)
+                dict_list.append(json_dictionary)
+        with open(file_name, 'w', encoding="UTF-8") as f:
+            f.write(str(dict_list))
