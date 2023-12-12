@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Base Module"""
+import json
 
 
 class Base:
@@ -13,3 +14,10 @@ class Base:
         else:
             Base.__nb_projects += 1
             self.id = Base.__nb_projects
+
+    def to_json_string(list_dictionaries):
+        """to_json_string - sterilize data"""
+        if list_dictionaries is not None:
+            return json.dumps(list_dictionaries)
+        else:
+            return "[]"
