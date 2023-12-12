@@ -107,6 +107,7 @@ class Rectangle(Base):
                 f" {self.__x}/{self.__y} - {self.__width}/{self.__height}")
 
     def update(self, *args):
+        """ update instance values"""
         for i, arg in enumerate(args):
             if i == 0:
                 self.id = arg
