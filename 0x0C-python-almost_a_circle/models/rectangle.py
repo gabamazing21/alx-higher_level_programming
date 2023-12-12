@@ -109,7 +109,7 @@ class Rectangle(Base):
     def update(self, *args):
         for i, arg in enumerate(args):
             if i == 0:
-                self.id == arg
+                self.id = arg
             elif i == 1:
                 self.__width = arg
             elif i == 2:
