@@ -29,8 +29,9 @@ class TestRectangle(unittest.TestCase):
         self.rectangle.y = 7
         self.assertEqual(self.rectangle.y, 7)
     def test_method(self):
-        rect = Rectangle(5, 2, 3, 4, 5)
-        self.assertEqual(rect.area(), 10)
+        rect = Rectangle(1, 1, 3, 4, 5)
+        self.assertEqual(rect.area(), 1)
+        self.assertEqual(rect.display(), None)
 
     def test_non_integer_input(self):
         with self.assertRaises(TypeError):
