@@ -28,6 +28,9 @@ class TestRectangle(unittest.TestCase):
     def test_set_y(self):
         self.rectangle.y = 7
         self.assertEqual(self.rectangle.y, 7)
+    def test_method(self):
+        rect = Rectangle(5, 2, 3, 4, 5)
+        self.assertEqual(rect.area(), 10)
 
     def test_non_integer_input(self):
         with self.assertRaises(TypeError):
