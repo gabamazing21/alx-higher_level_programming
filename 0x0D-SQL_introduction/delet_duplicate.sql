@@ -1,3 +1,3 @@
 -- delete a row with duplicate
-DELETE FROM first_table
-WHERE id = 89
+DELETE FROM second_table
+WHERE id < 5
