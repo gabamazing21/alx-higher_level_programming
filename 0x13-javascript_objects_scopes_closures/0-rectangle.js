@@ -2,6 +2,6 @@
 class Rectangle {
     //empty class
     constructor(){
-        //contructor logic
+        //contructor logics
     }
 }

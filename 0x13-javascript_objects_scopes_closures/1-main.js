@@ -1,4 +1,4 @@
-#!/Users/gabriel/.nvm/versions/node/v14.0.0/bin/node
+#!/usr/bin/node
 const Rectangle = require('./1-rectangle');
 
 const r1 = new Rectangle(2, 3);
