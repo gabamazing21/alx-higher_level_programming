@@ -5,5 +5,5 @@ if (argv.length === 1) {
 } else if (argv.length === 0) {
   console.log('No argument');
 } else {
-  console.log('No argument');
+  console.log('Arguments found');
 }
