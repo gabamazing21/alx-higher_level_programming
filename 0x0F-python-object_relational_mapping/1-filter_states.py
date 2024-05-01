@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usrbin/python3
 """
     connecting to MySQL database and
     execute your SQL queries.
@@ -14,7 +14,8 @@ if __name__ == "__main__":
     conn = MySQLdb.connect(host="localhost", port=3306, user=db_user,
                            passwd=db_ps, db=db_name, charset="utf8")
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE UPPER(name) LIKE 'N%' ORDER BY id ASC ")
+    cur.execute("""SELECT * FROM states WHERE
+                UPPER(name) LIKE 'N%' ORDER BY id ASC """)
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
