@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+"""
+    connecting to MySQL database and
+    execute your SQL queries.
+"""
 import MySQLdb
 import sys
 
+
 if __name__ == "__main__":
-    """
-    connecting to MySQL database and execute your SQL queries.
-    """
     un = sys.argv[1]
     ps = sys.argv[2]
     d_b = sys.argv[3]
