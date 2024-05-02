@@ -14,10 +14,15 @@ if __name__ == "__main__":
     conn = MySQLdb.connect(host="localhost", port=3306, user=db_user,
                            passwd=db_ps, db=db_name, charset="utf8")
     cur = conn.cursor()
-    cur.execute("""SELECT * FROM states WHERE
-                UPPER(name) LIKE 'N%' ORDER BY id ASC """)
-    query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row)
-    cur.close()
-    conn.close()
+    sql = "SELECT * FROM states WHERE UPPER(name) LIKE 'N%' ORDER BY id ASC"
+    try:
+        cur.execute(sql)
+        query_rows = cur.fetchall()
+        for row in query_rows:
+            print(row)
+    except Exception as e:
+        print("Error:", e)
+
+    finally:
+        cur.close()
+        conn.close()
