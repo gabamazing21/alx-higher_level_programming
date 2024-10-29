@@ -1,15 +1,18 @@
 #!/usr/bin/node
 const argv = process.argv.slice(2);
-if (argv.length <= 0 ) {
+let intArgv = [];
+if (argv.length <= 0) {
     console.log(0);
 }
   else {
-    console.log(findSecondInt(argv));
+    for (let num of argv){
+      intArgv.push(Number.parseInt(num));
+    }
+    console.log(findSecondInt(intArgv));
   }
-  function findSecondInt(arr){
+function findSecondInt(arr){
     let first = -Infinity;
     let second = -Infinity;
-
     for (let num of arr){
         if (num > first){
             second = first;
