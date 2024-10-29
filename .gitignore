@@ -1,2 +1,6 @@
 # Ignore all files within folders named __pycache__
 **/__pycache__/*
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
